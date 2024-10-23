@@ -1,12 +1,11 @@
 export default function getResponseFromAPI() {
   const myPromise = new Promise((myResolve, myReject) => {
     myResolve();
-    myReject(); 
+    myReject();
   });
   myPromise.then(
-    (value) => { true },
-    (error) => { false },
-);
+    () => { true; },
+    (error) => { false; },
+  );
   return myPromise;
 }
-
