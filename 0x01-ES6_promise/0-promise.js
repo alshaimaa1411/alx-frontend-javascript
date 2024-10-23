@@ -3,6 +3,6 @@ export default function getResponseFromAPI() {
     myResolve();
     myReject();
   });
-  myPromise.then ? () => { getResponseFromAPI.value; } : () => { getResponseFromAPI.error; };
+  myPromise.then ? () => { this.value; } : () => { this.error; };
   return myPromise;
 }
