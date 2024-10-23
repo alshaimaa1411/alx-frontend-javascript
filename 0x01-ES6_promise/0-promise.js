@@ -4,8 +4,8 @@ export default function getResponseFromAPI() {
     myReject();
   });
   myPromise.then(
-    () => { true; },
-    (error) => { false; },
+    () => { getResponseFromAPI.value; },
+    () => { getResponseFromAPI.error; },
   );
   return myPromise;
 }
