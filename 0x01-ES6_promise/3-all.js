@@ -1,3 +1,4 @@
+import {uploadPhoto, createUser} from "./utils.js"
 export default async function handleProfileSignup(){
   const pro1 = await uploadPhoto();
   const pro2 = await createUser();
