@@ -1,4 +1,4 @@
-import default function signUpUser(firstName, lastName) {
+import function signUpUser(firstName, lastName) {
   return Promise.resolve({
     firstName: firstName,
     lastName: lastName,
